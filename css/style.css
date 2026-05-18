@@ -243,49 +243,61 @@ section {
 
 /*プロフィール
 --------------------------------*/
-@media(min-width:768px) {
-  .profile {
-    margin-bottom: 1rem;
-  }
+/* 想い */
+.profile {
+  padding: 6rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: 0.15em;
+}
+
+.profile-visual {
+  margin-bottom: 4rem;
+}
+
+.profile-landscape {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 .profile-item {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
-  justify-content: center;
 }
 
 @media(min-width:768px) {
   .profile-item {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 
 .profile-item-image {
-  max-width: 67.5rem;
-  margin: auto;
-  width: 57%;
-}
-
-@media(min-width:768px) {
-  .profile-item-image {
-    width: 22%;
-  }
+  width: 220px;
+  border-radius: 999px;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .profile-item-text {
-  line-height: 2;
-
+  max-width: 38rem;
+  line-height: 2.4;
+  letter-spacing: 0.05em;
+  color: #444;
+  font-size: 0.98rem;
+  margin: auto
 }
-
-@media(min-width:768px) {
-  .profile-item-text {
-    font-size: 1rem;
-  }
-}
-
 /*種類
 -------------------------------------------------*/
 @media(min-width:768px) {
@@ -374,7 +386,7 @@ section {
 }
 
 .shopping-item {
-  width: calc(50% - 0.5rem);
+  width: 100%;
   list-style: none;
 }
 
